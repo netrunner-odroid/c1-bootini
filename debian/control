@@ -1,0 +1,13 @@
+Source: c1-bootini
+Section: misc
+Priority: optional
+Maintainer: Rohan Garg <rohan@kde.org>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.8
+Homepage: https://github.com/mdrjr/c1_bootini
+
+Package: c1-bootini
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: boot.ini and display.sh for ODROID-C1
+ Provides boot.ini with resolution setup and other bootloader configurations.

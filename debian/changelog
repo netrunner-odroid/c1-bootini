@@ -1,0 +1,5 @@
+c1-bootini (0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Rohan Garg <rohan@kde.org>  Tue, 25 Oct 2016 15:51:04 +0200
