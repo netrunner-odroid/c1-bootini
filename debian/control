@@ -8,6 +8,9 @@ Homepage: https://github.com/mdrjr/c1_bootini
 
 Package: c1-bootini
 Architecture: any
+Replaces: bootini (<= 20160815-29)
+Breaks: bootini (<= 20160815-29)
+Conflicts: bootini (<= 20160815-29)
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: boot.ini and display.sh for ODROID-C1
  Provides boot.ini with resolution setup and other bootloader configurations.
