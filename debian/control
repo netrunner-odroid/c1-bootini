@@ -7,7 +7,7 @@ Standards-Version: 3.9.8
 Homepage: https://github.com/mdrjr/c1_bootini
 
 Package: c1-bootini
-Architecture: any
+Architecture: armhf
 Replaces: bootini (<= 20160815-29)
 Breaks: bootini (<= 20160815-29)
 Conflicts: bootini (<= 20160815-29)
