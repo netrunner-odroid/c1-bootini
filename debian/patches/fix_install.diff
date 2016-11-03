@@ -13,5 +13,5 @@ Index: c1-bootini-0/Makefile
 +	install boot.ini $(DESTDIR)/usr/share/bootini
 +	mkdir -p $(DESTDIR)/etc/initramfs-tools/scripts/local-top
 +	install c1_init.sh $(DESTDIR)/etc/initramfs-tools/scripts/local-top
-+	install -d 99-c1-network.conf $(DESTDIR)/etc/sysctl.d
++	install -D 99-c1-network.conf -t $(DESTDIR)/etc/sysctl.d
 +	install update_20150724.sh $(DESTDIR)/usr/share/bootini
