@@ -1,17 +1,20 @@
-Index: c1-bootini-0/Makefile
-===================================================================
---- c1-bootini-0.orig/Makefile
-+++ c1-bootini-0/Makefile
-@@ -1,6 +1,7 @@
+--- a/Makefile
++++ b/Makefile
+@@ -1,8 +1,9 @@
  install:
 -	mkdir -p /usr/share/bootini
 -	install boot.ini /usr/share/bootini
 -	install c1_init.sh /etc/initramfs-tools/scripts/local-top
 -	install 99-c1-network.conf /etc/sysctl.d
 -	install update_20150724.sh /usr/share/bootini
+-	install 99-gpiomem.rules /etc/udev/rules.d
+-	
+\ No newline at end of file
 +	mkdir -p $(DESTDIR)/usr/share/bootini
 +	install boot.ini $(DESTDIR)/usr/share/bootini
 +	mkdir -p $(DESTDIR)/etc/initramfs-tools/scripts/local-top
 +	install c1_init.sh $(DESTDIR)/etc/initramfs-tools/scripts/local-top
 +	install -D 99-c1-network.conf -t $(DESTDIR)/etc/sysctl.d
 +	install update_20150724.sh $(DESTDIR)/usr/share/bootini
++	install 99-gpiomem.rules $(DESTDIR)/etc/udev/rules.d
++	
