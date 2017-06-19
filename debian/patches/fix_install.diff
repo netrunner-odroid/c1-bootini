@@ -16,5 +16,6 @@
 +	install c1_init.sh $(DESTDIR)/etc/initramfs-tools/scripts/local-top
 +	install -D 99-c1-network.conf -t $(DESTDIR)/etc/sysctl.d
 +	install update_20150724.sh $(DESTDIR)/usr/share/bootini
++	mkdir -p $(DESTDIR)/etc/udev/rules.d
 +	install 99-gpiomem.rules $(DESTDIR)/etc/udev/rules.d
 +	
