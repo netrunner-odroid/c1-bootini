@@ -1,6 +1,6 @@
 --- a/Makefile
 +++ b/Makefile
-@@ -1,8 +1,9 @@
+@@ -1,10 +1,11 @@
  install:
 -	mkdir -p /usr/share/bootini
 -	install boot.ini /usr/share/bootini
@@ -8,7 +8,9 @@
 -	install 99-c1-network.conf /etc/sysctl.d
 -	install update_20150724.sh /usr/share/bootini
 -	install 99-gpiomem.rules /etc/udev/rules.d
--	
+-	install boot.ini.default /usr/share/bootini
+-	install bootini-persistence.pl /usr/share/bootini
+-
 \ No newline at end of file
 +	mkdir -p $(DESTDIR)/usr/share/bootini
 +	install boot.ini $(DESTDIR)/usr/share/bootini
@@ -18,4 +20,6 @@
 +	install update_20150724.sh $(DESTDIR)/usr/share/bootini
 +	mkdir -p $(DESTDIR)/etc/udev/rules.d
 +	install 99-gpiomem.rules $(DESTDIR)/etc/udev/rules.d
-+	
++	install boot.ini.default $(DESTDIR)/usr/share/bootini
++	install bootini-persistence.pl $(DESTDIR)/usr/share/bootini
++
