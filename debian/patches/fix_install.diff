@@ -1,6 +1,6 @@
---- a/Makefile
-+++ b/Makefile
-@@ -1,10 +1,11 @@
+--- a/Makefile	2019-01-24 16:57:36.950055238 +0100
++++ b/Makefile	2019-01-24 16:59:53.961284697 +0100
+@@ -1,10 +1,12 @@
  install:
 -	mkdir -p /usr/share/bootini
 -	install boot.ini /usr/share/bootini
@@ -10,8 +10,8 @@
 -	install 99-gpiomem.rules /etc/udev/rules.d
 -	install boot.ini.default /usr/share/bootini
 -	install bootini-persistence.pl /usr/share/bootini
--
-\ No newline at end of file
+-	
+\ Kein Zeilenumbruch am Dateiende.
 +	mkdir -p $(DESTDIR)/usr/share/bootini
 +	install boot.ini $(DESTDIR)/usr/share/bootini
 +	mkdir -p $(DESTDIR)/etc/initramfs-tools/scripts/local-top
